@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: code-community-museum
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    healthCheckPath: /
+    envVars:
+      - key: HOST
+        value: "0.0.0.0"
+      - key: NITRO_HOST
+        value: "0.0.0.0"
+      - key: NITRO_PORT
+        value: "8080"
+      - key: PORT
+        value: "8080"
+      - key: NODE_ENV
+        value: production
