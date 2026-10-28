@@ -1,0 +1,14 @@
+node_modules
+.output
+.vercel
+.git
+.gitignore
+.env
+.env.*
+*.log
+screenshots
+artifacts
+.DS_Store
+npm-debug.log*
+.coverage
+dist
